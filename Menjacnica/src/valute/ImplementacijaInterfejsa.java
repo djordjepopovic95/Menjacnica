@@ -7,27 +7,27 @@ import interfejsi.MenjacnicaInterfejs;
 import kursevi.Kurs;
 import valute.Valuta;
 
-public class ImplementacijaInterfejsa implements MenjacnicaInterfejs{
+public class ImplementacijaInterfejsa implements MenjacnicaInterfejs {
 
-	@Override
 	public LinkedList<Kurs> dodajKurs(LinkedList<Kurs> kursevi, Kurs k) {
-		// TODO Auto-generated method stub
-		return null;
+
+		kursevi.add(k);
+		return kursevi;
 	}
 
 	@Override
 	public LinkedList<Kurs> izbrisiKurs(LinkedList<Kurs> kursevi, Kurs k) {
-		// TODO Auto-generated method stub
-		return null;
+		kursevi.remove(k);
+		return kursevi;
 	}
 
 	@Override
 	public Kurs pronadjiKurs(LinkedList<Kurs> kursevi, GregorianCalendar k) {
-		// TODO Auto-generated method stub
+		for (int i = 0; i < kursevi.size(); i++) {
+			if (kursevi.get(i).getDatum().equals(k)) {
+				return kursevi.get(i);
+			}
+		}
 		return null;
 	}
-
-	
-	
-
 }

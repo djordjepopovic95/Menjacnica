@@ -11,7 +11,9 @@ public class ImplementacijaInterfejsa implements MenjacnicaInterfejs{
 
 	@Override
 	public LinkedList<Kurs> dodajKurs(LinkedList<Kurs> kursevi, Kurs k) {
-		// TODO Auto-generated method stub
+		if (k != null){
+			kursevi.add(k);
+		}
 		return null;
 	}
 

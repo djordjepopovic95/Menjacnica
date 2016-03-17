@@ -6,8 +6,8 @@ import kursevi.Kurs;
 
 public class Valuta {
 
-	String naziv;
-	String skraceni_naziv;
+	private String naziv;
+	private String skraceni_naziv;
 	LinkedList<Kurs> kursevi = new LinkedList<Kurs>();
 
 	public String getNaziv() {

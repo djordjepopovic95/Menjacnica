@@ -15,6 +15,7 @@ public class Valuta {
 	}
 
 	public void setNaziv(String naziv) {
+		if (naziv != null && !naziv.isEmpty())
 		this.naziv = naziv;
 	}
 
@@ -23,6 +24,7 @@ public class Valuta {
 	}
 
 	public void setSkraceni_naziv(String skraceni_naziv) {
+		if (skraceni_naziv != null && !skraceni_naziv.isEmpty())
 		this.skraceni_naziv = skraceni_naziv;
 	}
 
@@ -31,6 +33,7 @@ public class Valuta {
 	}
 
 	public void setKursevi(LinkedList<Kurs> kursevi) {
+		if (kursevi != null)
 		this.kursevi = kursevi;
 	}
 

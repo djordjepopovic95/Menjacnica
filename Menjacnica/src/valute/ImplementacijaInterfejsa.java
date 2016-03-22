@@ -5,7 +5,6 @@ import java.util.LinkedList;
 
 import interfejsi.MenjacnicaInterfejs;
 import kursevi.Kurs;
-import valute.Valuta;
 
 public class ImplementacijaInterfejsa implements MenjacnicaInterfejs {
 
